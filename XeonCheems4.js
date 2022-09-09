@@ -3535,7 +3535,7 @@ reply(`إرسال صورة / فيديو مع شرح ${prefix + command}\nVideo D
 }
 }
 break
-case 'swm': case 'سرقه': case 'سرقة': {
+case 'swm': case 'زرف': case 'سرقة': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return reply(`مثال :\nswm ${global.author}|${global.packname}`)
@@ -10601,7 +10601,8 @@ case 'tqtt':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(`شكرا لنفسي🥺💕
-واخويا عبضو 🤡
+واخواني 🤡
+اياتو ولوفي والجزار الوزير
 وشكرا ليك ياللي بتستخدم البوت🌚💕 `)
 break
             default:
