@@ -1993,10 +1993,10 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
       case 'خول':
       case 'وسخ':
       case 'مكروف':
-      case 'بيتناك':
-      case 'كس':
+      case 'مهفوف':
+      case 'غول':
       case 'معرص':
-      case 'شرموط':
+      case 'دجاجه':
       case 'اهطل':
       case 'loda':
       case 'laund':
@@ -2389,22 +2389,22 @@ if (isBanChat) return reply(mess.banChat)
                 reply(mess.success)
                 }
                 break
-            case 'تاك': {
+            case 'منشن': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ تاك للكل ♥●•٠·˙«╝ 
+let teks = `*｢🐦منشن جماعي🐦｣* 
  
- ➲ *الرساله : ${q ? q : 'no message'}*\n\n`
+ ➲ *الرساله : ${q ? q : 'لا توجد رساله'}*\n\n`
                 for (let mem of participants) {
                 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'وهمي': case 'منشن.وهمي': {
+                case 'وهمي': case 'مخفي': {
                 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -2413,7 +2413,7 @@ if (isBanChat) return reply(mess.banChat)
             XeonBotInc.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
-	    case 'style': case 'styletext': {
+	    case 'زخرفة': case 'styletext': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) //wont response when limit runs out\\
@@ -2926,7 +2926,7 @@ replay('النجاح في إيقاف موقع تويتر antilink في هذه ا
   }
   }
   break
-              case 'الروابط': {
+              case 'الحمايه': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
@@ -3518,7 +3518,7 @@ encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: 
 await fs.unlinkSync(encmedia)
 }
 break
-            case 'sticker': case 's': case 'stickergif': case 'استيكر': {
+            case 'sticker': case 's': case 'ملصق': case 'ستيكر': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (/image/.test(mime)) {
@@ -10263,13 +10263,13 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 قائمه ا
 ╠ ${prefix}شاذ
 ╠ ${prefix}علق
 ╠ ${prefix}متناك
-╠ ${prefix}خول
+╠ ${prefix}غول
 ╠ ${prefix}وسخ
 ╠ ${prefix}مكروف
-╠ ${prefix}بيتناك
-╠ ${prefix}كس
-╠ ${prefix}معرص
-╠ ${prefix}شرموط
+╠ ${prefix}بقره
+╠ ${prefix}غبي
+╠ ${prefix}ذكي
+╠ ${prefix}مهفوف
 ╠ ${prefix}اهطل
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "يوتيوب 📍","url": `${websitex}`}},{"urlButton": {"displayText": "سكربت🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "تبرع 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "المطور 👤","id": 'owner'}}] )
 break
